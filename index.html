@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Web portofolio tailwind" />
+    <meta name="keyword" content="tailwindcss, CSS, tailwind" />
+    <meta name="author" content="isak" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Document</title>
+    <style>
+      section {
+        border: 2px solid red;
+      }
+
+      .gradient {
+        background-image: linear-gradient(to bottom right, #4C51BF , #702459);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Mulai -->
+    <section class="w-screen mx-auto px-4">
+      <nav class="flex flex-wrap p-6 justify-between">
+        <div class="flex shrink-0 mr-6">
+          <img
+            src="img/LOGO-LEKAT-Rory-Marwani-768x256.png"
+            alt="logo_lekat"
+            class="h-10 w-50 mr-2"
+          />
+        </div>
+
+        <div class="block lg:hidden">
+          <a
+            class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="w-full block grow lg:flex lg:items-center lg:w-auto">
+          <a
+            href="#tentang"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
+            >Kisah Saya</a
+          >
+
+          <a
+            href="#pekerjaan"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
+            >Riwayat Pekerjaan</a
+          >
+
+          <a
+            href="#keahlian"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
+            >Keahlian Saya</a
+          >
+
+          <a
+            href="#kontak"
+            class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
+            >Kontak Saya</a
+          >
+        </div>
+      </nav>
+    </section>
+    <!-- Navbar Selesai -->
+
+    <section id="tentang" class="w-screen mx-auto py-4 gradient">
+      <div class="md:columns-2 px-16 py-8">
+        <div class="w-full">
+            <div class="px-4 py-4">
+                <img src="/img/foto.png" alt="foto_saya" class="shadow-lg rounded-full max-w-full mx-auto text-center w-70 object-cover aspect-square">
+            </div>
+        </div>
+        
+        <h1 class="w-full text-5xl font-bold text-center text-white">
+          TENTANG SAYA
+        </h1>
+
+        <div class="mb-4">
+          <div
+            class="bg-pink-500 w-3/6 md:w-1/6 opacity-75 rounded h-1 mx-auto"
+          ></div>
+        </div>
+
+        <h2 class="text-3xl text-center font-bold mb-2 text-white">
+          👋 Halo, Saya Steward Izak! Berjumpa Dengan Anda.
+        </h2>
+        <br>
+        <h3 class="text-lg text-justify text-gray-950 font-bold mb-2">
+          Saya seorang Full Stack Web Developer dan mahasiswa Sistem Informasi
+          yang memiliki passion dalam membangun aplikasi web interaktif,
+          efisien, dan user-friendly. Berpengalaman dalam pengembangan front-end
+          dan back-end, saya terbiasa mengelola project mulai dari perancangan
+          sistem, implementasi fitur, hingga deployment ke server.
+        </h3>
+      </div>
+
+      <!-- Grid Box -->
+       <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+            <i class="fas fa-laptop-code fa-4x text-blue-500 mb-6"></i>
+            <div class="p-4">
+                <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
+                <p class="text-gray-600 text-base mb-2">HTML (Begginer)</p>
+                <hr class="text-gray-600 mb-2">
+                <p class="text-gray-600 text-base mb-2">CSS (Begginer)</p>
+                <hr class="text-gray-600 mb-2">
+                <p class="text-gray-600 text-base mb-2">Javascript (Begginer)</p>
+                <hr class="text-gray mb-2">
+                <p class="text-gray-600 text-base mb-2">PHP (Begginer)</p>
+                <hr class="text-gray-600 mb-2">
+            </div>
+
+            <div class="px-2 py-4">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+            </div>
+        </div>
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-blue-500 m-3"></div>
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-green-500 m-3"></div>
+       </div>
+    </section>
+
+    <section class="w-screen mx-auto py-4 bg-white h-32">Keahlian</section>
+    <section class="w-screen mx-auto py-4 bg-gray-300 h-32">Pendidikan</section>
+    <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">
+      Kontak Saya
+    </section>
+    <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
+  </body>
+</html>
